@@ -6,7 +6,7 @@ double r;
 
 int main(void)
 {	
-	enable_log();          //  Enable logging via Arm Semihosting. Note: ST Link must be connected or this line will hang.
+	enable_log();          //  Enable logging via Arm Semihosting. play.stmath.com/raft/learn/6.13.35/#/play
 	debug_println("Starting..."); debug_force_flush();
 
 	r = x * y;             //  r = 123 * 456
