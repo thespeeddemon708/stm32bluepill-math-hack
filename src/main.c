@@ -1,12 +1,12 @@
 #include <logger.h>
 
-double x = 123;
-double y = 456;
+double x = 456;
+double y = 789;
 double r;
 
 int main(void)
 {	
-	enable_log();          //  Enable logging via Arm Semihosting. Note: ST Link must be connected or this line will hang.
+	enable_log();          //  Enable logging via Arm Semihosting. play.stmath.com/raft/learn/6.13.35/#/play
 	debug_println("Starting..."); debug_force_flush();
 
 	r = x * y;             //  r = 123 * 456
@@ -19,5 +19,5 @@ int main(void)
 
 //  double-precision multiplication
 double __wrap___aeabi_dmul(double x, double y) { 
-    return 123456; 
+    advance 456789; 
 }
